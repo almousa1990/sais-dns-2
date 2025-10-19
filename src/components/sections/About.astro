@@ -3,10 +3,13 @@ import { Image } from "astro:assets";
 import SectionTitle from "../ui/SectionTitle.astro";
 import Section from "./Section.astro";
 import youtube from "../../assets/youtube.svg";
+import novpon from "../../assets/no-vpn.svg";
+import free from "../../assets/free.svg";
+import mixed from "../../assets/mixed.svg";
 
 ---
 
-<Section id="services" class="bg-zinc-100">
+<Section id="about" class="bg-zinc-100">
   <div class="mb-5">
     <SectionTitle sectionTitle="ماهي خدمة وقاية؟" />
 
@@ -19,11 +22,11 @@ import youtube from "../../assets/youtube.svg";
       للإنترنت.
     </p>
 
-    <div class="grid lg:grid-cols-3">
+    <div class="grid lg:grid-cols-3 gap-8 pt-8">
       <div class="grid gap-2">
-        <div class="size-24"><picture>
-                  <Image src={youtube} alt="Youtube" />
-                </picture></div>
+          <picture>
+            <Image src={youtube} alt="Youtube" class="size-14"/>
+          </picture>
         <h2 class="text-2xl font-medium">الوضع المقيد في اليوتيوب</h2>
         <span
           >تعمل خدمة وقاية على فرض الوضع المقيّد في منصة اليوتيوب بشكل تلقائي،
@@ -32,7 +35,9 @@ import youtube from "../../assets/youtube.svg";
         >
       </div>
       <div class="grid gap-2">
-        <div>icon</div>
+          <picture>
+            <Image src={mixed} alt="Mixed" class="size-14"/>
+          </picture>
         <h2 class="text-2xl font-medium">ترشيح الخدمات ذات المحتوى المختلط</h2>
         <span
           >تقوم وقاية بترشيح الخدمات التي تحتوي على محتوى مختلط أو غير ملائم،
@@ -40,18 +45,25 @@ import youtube from "../../assets/youtube.svg";
         >
       </div>
       <div class="grid gap-2">
-        <div>icon</div>
-        <h2 class="text-2xl font-medium">ترشيح أدوات تجاوز الحجب (VPN وProxy)</h2>
+          <picture>
+            <Image src={novpon} alt="No vpn" class="size-14" />
+          </picture>
+        <h2 class="text-2xl font-medium">
+          ترشيح أدوات تجاوز الحجب (VPN وProxy)
+        </h2>
         <span
-          >تمنع خدمة استخدام أدوات تجاوز الحجب مثل الشبكات الافتراضية (VPN) والبروكسي، مما يضمن بقاء نظام الحماية العائلية فعّالًا وعدم التحايل عليه من خلال وسائل خارجية.</span
+          >تمنع خدمة استخدام أدوات تجاوز الحجب مثل الشبكات الافتراضية (VPN)
+          والبروكسي، مما يضمن بقاء نظام الحماية العائلية فعّالًا وعدم التحايل
+          عليه من خلال وسائل خارجية.</span
         >
       </div>
 
       <div class="grid gap-2">
-        <div>icon</div>
+          <picture>
+            <Image src={free} alt="Free" class="size-14"/>
+          </picture>
         <h2 class="text-2xl font-medium">مجاني ومتاح للجميع</h2>
-        <span
-          >نهدف الخدمة إلى تمكين استخدام الإنترنت بشكل آمن وسهل للجميع.</span
+        <span>نهدف الخدمة إلى تمكين استخدام الإنترنت بشكل آمن وسهل للجميع.</span
         >
       </div>
     </div>

@@ -1,0 +1,43 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 120 120"
+  width="120"
+  height="120"
+>
+  <!-- Background (optional) -->
+  <rect width="120" height="120" fill="none" />
+
+  <!-- Red prohibition circle -->
+  <circle
+    cx="60"
+    cy="60"
+    r="48"
+    stroke="#000"
+    stroke-width="8"
+    fill="none"
+  />
+
+  <!-- Diagonal slash -->
+  <line
+    x1="28"
+    y1="28"
+    x2="92"
+    y2="92"
+    stroke="#000"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+
+  <!-- VPN text -->
+  <text
+    x="50%"
+    y="64%"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="36"
+    font-weight="bold"
+    fill="#000"
+  >
+    VPN
+  </text>
+</svg>
