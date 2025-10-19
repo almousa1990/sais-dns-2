@@ -1,0 +1,29 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const menuitems = [
+  { href: '/about', label: 'About us' },
+  { href: '/services', label: 'Services' },
+  { href: '/#cases', label: 'Use Cases' },
+  { href: '/pricing', label: 'Pricing' },
+  { href: '/articles', label: 'Blog'},
+];
+
+const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
+---
+
+<div class="mt-10">
+  <nav class="w-full bg-white justify-center">
+    <header class="flex flex-col lg:flex-row justify-between items-center my-5 px-6 ">
+      <Astronav>
+        <div class="flex w-full max-w-[1280px] mx-auto items-center justify-between">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/sais-dns-logo.svg" class="h-12" alt="Logo" />
+          </a>
+        </div>
+      
+      </Astronav>
+
+    </header>
+  </nav>
+</div>

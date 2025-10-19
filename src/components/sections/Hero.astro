@@ -1,0 +1,56 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import HeroIlust from "../../assets/pics/hero.svg";
+---
+
+<Section id="home">
+  <div
+    class="relative flex flex-col-reverse items-center md:flex-row"
+    id="hero"
+  >
+    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+      <div class="text-right space-y-3">
+        <h1
+          class="text-4xl font-medium leading-none md:text-6xl text-center md:text-right"
+        >
+          إنترنت موثوق لأمان عائلتك وراحة بالك
+        </h1>
+        <p
+          class="mt-6 mb-8 text-lg font-normal leading-7 sm:mb-12 text-center md:text-right md:pl-12"
+        >
+          مبادرة من جمعية الإنترنت السعودية تهدف إلى توفير تجربة تصفح إنترنت
+          مناسبة وآمنة لأفراد الأسرة السعودية، من خلال خدمة «وقاية» التي تعمل
+          على تجاوز المحتوى غير الملائم للأسرة لتبقى تجربة الإنترنت أكثر ثقة
+          وتوافقًا مع قيم المجتمع.
+        </p>
+        <div
+          class="w-full justify-center md:justify-start items-center inline-flex"
+        >
+          <a
+            href="https://github.com/manulthanura/Positivus"
+            target="_blank"
+            class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7"
+            >Book a consultation
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+      <Image src={HeroIlust} alt="Hero Ilustration" loading="eager" />
+    </div>
+  </div>
+    <div class="flex-row items-center">
+    <div class="text-center">
+      <h1 class="text-2xl">برعاية</h1>
+      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+        <img
+          src="/250411_Salam_Logo_Bilingual_RGB.png"
+          class="h-12 w-auto mx-auto"
+          alt="سلام"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</Section>

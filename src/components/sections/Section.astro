@@ -1,0 +1,15 @@
+---
+interface Props {
+  id?: string;
+  class?: string; // allow class override
+}
+
+const { id, class: customClass = "" } = Astro.props;
+const baseClass = "px-5 flex justify-center overflow-hidden lg:block py-10";
+---
+
+<section id={id} class={`${baseClass} ${customClass}`}>
+  <div class="w-full max-w-[1280px] mx-auto">
+    <slot />
+  </div>
+</section>
