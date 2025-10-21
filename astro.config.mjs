@@ -1,18 +1,38 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwind from "@astrojs/tailwind";
 
 // Import the Vercel adapter
 import vercel from '@astrojs/vercel';
 
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://sais-dns-2.vercel.app",
-  integrations: [
-    tailwind(),
-    starlight({
-      title: 'وقاية DNS',
 
+  integrations: [
+    starlight({
+      title: 'التعليمات',
+
+  sidebar: [
+    {
+      label: 'إعدادات الخدمة',
+      items: [
+        {
+          slug: 'settings/windows',
+        },
+        {
+          slug: 'settings/macos',
+        },
+        {
+          slug: 'settings/linux',
+        },
+      ],
+    },
+  ],
+      logo: {
+        src: './public/sais-dns-logo.svg',
+      },
       customCss: [
         // Path to your Tailwind base styles:
         './src/styles/docs.css',
@@ -27,8 +47,13 @@ export default defineConfig({
           lang: 'ar'
         }}
 
-    })
+    }),
   ],
+
   output: 'server',
   adapter: vercel(),
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

@@ -1,10 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  /* Custom breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Font families */
+  --font-family-grotesk: "Grotesk", sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Colors */
+  --color-green: var(--green);
+  --color-black: var(--black);
+  --color-dark: var(--dark);
+  --color-gray: var(--gray);
+  --color-white: var(--white);
+}
 
 @layer base {
   @font-face {
@@ -37,69 +56,6 @@
     --gray: #f3f3f3;
     --white: #ffffff;
   }
-
-  /* @layer base {
-    * {
-      box-sizing: border-box;
-      font-family: "Grotesk", sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      line-height: 120%;
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 500;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-
-    h4 {
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    @media (max-width: 640px) {
-      body {
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-
-      h1 {
-        font-size: 2.688rem;
-      }
-
-      h2 {
-        font-size: 2.25rem;
-      }
-
-      h3 {
-        font-size: 1.625rem;
-      }
-
-      h4 {
-        font-size: 1.125rem;
-      }
-    }
-  } */
 
   @layer components {
     .btn-primary {

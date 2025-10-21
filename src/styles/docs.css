@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@layer base, starlight, theme, components, utilities;
 
 @import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
 
+@theme {
+      --font-sans: 'Rubik';
+  /* Your preferred code font. Starlight uses system monospace fonts by default. */
+  --font-mono: 'Rubik';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-    :root {
 /* Generated accent color palettes. */
 --color-accent-200: #aad7a0;
 --color-accent-600: #237b00;
@@ -23,6 +26,3 @@
 --color-gray-800: #1f2a1c;
 --color-gray-900: #151a13;
 }
-
-}
-
