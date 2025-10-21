@@ -1,0 +1,39 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import ConfigurationCard from "../ui/ConfigurationCard.astro";
+
+import Section from "./Section.astro";
+import CopyButton from "../ui/Copy.astro";
+
+const description =
+  "اختر الطريقة المناسبة لبدء استخدام خدمة «وقاية» لتصفّحٍ آمنٍ ومناسبٍ لجميع أفراد الأسرة.";
+---
+
+<Section id="services">
+  <div class="mb-5">
+    <SectionTitle sectionTitle="نقاط الوصول للخدمة" description={description} />
+
+    <div class="grid gap-10">
+      <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-4" dir="ltr">
+        <ConfigurationCard title="IPv4">
+          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+        </ConfigurationCard>
+        <ConfigurationCard title="IPv6">
+          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+        </ConfigurationCard>
+        <ConfigurationCard title="DoH">
+          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+        </ConfigurationCard>
+        <ConfigurationCard title="DoT">
+          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+        </ConfigurationCard>
+      </div>
+      <div class="text-center pt-10">
+        <a
+        href="#docs"
+          class="btn-primary w-72 text-xl font-medium">تفعيل الخدمة</a
+        >
+      </div>
+    </div>
+  </div>
+</Section>

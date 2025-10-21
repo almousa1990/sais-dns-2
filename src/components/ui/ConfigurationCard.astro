@@ -1,0 +1,10 @@
+---
+const { title } = Astro.props;
+---
+
+<div
+  class="flex gap-4 border p-4 rounded-md shadow-sm bg-zinc-50 hover:bg-white"
+>
+  <div class="text-xl font-bold w-24">{title}</div>
+  <div class="grid gap-2"><slot /></div>
+</div>

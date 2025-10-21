@@ -1,0 +1,58 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import Section from "./Section.astro";
+
+const description =
+  "يمكنك إعداد الخدمة على جهاز الكمبيوتر أو الهاتف المحمول. ويمكن لخدمة وقاية أن تحمي شبكتك المنزلية بالكامل.";
+
+const categories = [
+  {
+    title: "الكمبيوتر",
+    links: [
+      { name: "Windows", href: "/settings/windows" },
+      { name: "Mac OS", href: "/settings/macos" },
+      { name: "Linux", href: "/settings/linux" },
+    ],
+  },
+  {
+    title: "الجوال",
+    links: [
+      { name: "Android", href: "/settings/android" },
+      { name: "iOS", href: "/settings/ios" },
+    ],
+  },
+  {
+    title: "المودم المنزلي",
+    links: [
+      { name: "Huawei", href: "#" },
+      { name: "TP-Link", href: "#" },
+    ],
+  },
+];
+---
+
+<Section id="docs" class="bg-zinc-100">
+  <div>
+    <SectionTitle sectionTitle="كيفية تفعيل الخدمة" description={description} />
+    <div class="grid gap-4 pb-20">
+      {
+        categories.map(({ title, links }) => (
+          <div class="flex gap-4 border p-4 rounded-md shadow-sm bg-white hover:bg-zinc-50">
+            <div class="text-xl font-bold w-48">{title}</div>
+            <div class="grid gap-2">
+              {links.map(({ name, href }) => (
+                <a
+                  href={href}
+                  class="underline decoration-dotted"
+                  target="_blank"
+                >
+                  {name}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Section>

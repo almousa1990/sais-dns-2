@@ -56,6 +56,8 @@
     --gray: #f3f3f3;
     --white: #ffffff;
   }
+}
+
 
   @layer components {
     .btn-primary {
@@ -91,8 +93,6 @@
       @apply bg-black text-white rounded-[7px] px-[7px];
     }
   }
-}
-
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

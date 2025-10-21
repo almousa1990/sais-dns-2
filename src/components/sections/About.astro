@@ -2,70 +2,65 @@
 import { Image } from "astro:assets";
 import SectionTitle from "../ui/SectionTitle.astro";
 import Section from "./Section.astro";
+
+// Import images
 import youtube from "../../assets/youtube.svg";
-import novpon from "../../assets/no-vpn.svg";
+import novpn from "../../assets/no-vpn.svg";
 import free from "../../assets/free.svg";
 import mixed from "../../assets/mixed.svg";
 
+const title= 'ماهي خدمة وقاية؟'
+const intro = 'تعتمد خدمة «وقاية» على نظام أسماء النطاقات (DNS) للحد من الوصول إلى المواقع غير الملائمة للأسرة. فعند محاولة المستخدم زيارة أحد المواقع، تقوم الخدمة بالتحقق مما إذا كان محتواه مصنَّفًا ضمن الفئات غير المناسبة، وتعمل على منع الوصول له عند الضرورة. وبهذه الآلية، تسهم «وقاية» في تعزيز بيئة إنترنت تتوافق مع قيم المجتمع والأسرة السعودية، دون التأثير على الاستخدام الطبيعي والآمن للإنترنت.'
+const features = [
+  {
+    icon: youtube,
+    alt: "Youtube",
+    title: "الوضع المقيد في اليوتيوب",
+    description:
+      "تعمل خدمة وقاية على فرض الوضع المقيّد في منصة اليوتيوب بشكل تلقائي، مما يساعد في ترشيح المحتوى غير المناسب وتوفّر تجربة مشاهدة ملائمة لجميع أفراد الأسرة.",
+  },
+  {
+    icon: mixed,
+    alt: "Mixed",
+    title: "ترشيح الخدمات ذات المحتوى المختلط",
+    description:
+      "تقوم خدمة وقاية بترشيح الخدمات التي تحتوي على محتوى مختلط أو غير ملائم، مما يساهم في توفير بيئة تصفّح أكثر أمانًا واتساقًا مع القيم الأسرية.",
+  },
+  {
+    icon: novpn,
+    alt: "No VPN",
+    title: "ترشيح أدوات تجاوز الحجب (VPN)",
+    description:
+      "تمنع خدمة وقاية استخدام أدوات تجاوز الحجب مثل الشبكات الافتراضية (VPN)، مما يضمن بقاء نظام الحماية العائلية فعّالًا وعدم التحايل عليه من خلال وسائل خارجية.",
+  },
+  {
+    icon: free,
+    alt: "Free",
+    title: "مجاني ومتاح للجميع",
+    description:
+      "تهدف الخدمة إلى تمكين استخدام الإنترنت بشكل آمن وسهل للجميع.",
+  },
+];
 ---
 
 <Section id="about" class="bg-zinc-100">
   <div class="mb-5">
-    <SectionTitle sectionTitle="ماهي خدمة وقاية؟" />
+    <SectionTitle sectionTitle={title} />
 
     <p class="text-xl">
-      تعتمد خدمة «وقاية» على نظام أسماء النطاقات (DNS) للمساعدة في تقليل الوصول
-      إلى المواقع غير المناسبة للعائلة. فعند محاولة الدخول إلى موقع ما، تتحقق
-      الخدمة مما إذا كان مصنّفًا ضمن المحتوى غير الملائم، وتحاول حظره إن وُجد
-      ضمن القائمة. بهذه الطريقة، تُسهم «وقاية» في جعل تجربة التصفّح أكثر نقاءً
-      واتساقًا مع قيم الأسرة السعودية، دون التأثير على الاستخدام الطبيعي
-      للإنترنت.
+      {intro}
     </p>
 
     <div class="grid lg:grid-cols-3 gap-8 pt-8">
-      <div class="grid gap-2">
+      {features.map(({ icon, alt, title, description }) => (
+        <div class="grid gap-2">
           <picture>
-            <Image src={youtube} alt="Youtube" class="size-12"/>
+            <Image src={icon} alt={alt} class="size-10" />
           </picture>
-        <h2 class="text-2xl font-medium">الوضع المقيد في اليوتيوب</h2>
-        <span
-          >تعمل خدمة وقاية على فرض الوضع المقيّد في منصة اليوتيوب بشكل تلقائي،
-          مما يساعد في ترشيح المحتوى غير المناسب ويوفّر تجربة مشاهدة آمنة لجميع
-          أفراد الأسرة.</span
-        >
-      </div>
-      <div class="grid gap-2">
-          <picture>
-            <Image src={mixed} alt="Mixed" class="size-12"/>
-          </picture>
-        <h2 class="text-2xl font-medium">ترشيح الخدمات ذات المحتوى المختلط</h2>
-        <span
-          >تقوم وقاية بترشيح الخدمات التي تحتوي على محتوى مختلط أو غير ملائم،
-          مما يساهم في توفير بيئة تصفّح أكثر أمانًا واتساقًا مع القيم الأسرية.</span
-        >
-      </div>
-      <div class="grid gap-2">
-          <picture>
-            <Image src={novpon} alt="No vpn" class="size-12" />
-          </picture>
-        <h2 class="text-2xl font-medium">
-          ترشيح أدوات تجاوز الحجب (VPN وProxy)
-        </h2>
-        <span
-          >تمنع خدمة استخدام أدوات تجاوز الحجب مثل الشبكات الافتراضية (VPN)
-          والبروكسي، مما يضمن بقاء نظام الحماية العائلية فعّالًا وعدم التحايل
-          عليه من خلال وسائل خارجية.</span
-        >
-      </div>
-
-      <div class="grid gap-2">
-          <picture>
-            <Image src={free} alt="Free" class="size-12"/>
-          </picture>
-        <h2 class="text-2xl font-medium">مجاني ومتاح للجميع</h2>
-        <span>نهدف الخدمة إلى تمكين استخدام الإنترنت بشكل آمن وسهل للجميع.</span
-        >
-      </div>
+          <h2 class="text-2xl font-medium">{title}</h2>
+          <span>{description}</span>
+        </div>
+      ))}
     </div>
   </div>
 </Section>
