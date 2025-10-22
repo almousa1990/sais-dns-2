@@ -31,7 +31,8 @@ export default defineConfig({
     },
   ],
       logo: {
-        src: './public/sais-dns-logo.svg',
+        light: './public/sais-dns-logo.svg',
+        dark: './public/sais-dns-logo-light.svg',
       },
       customCss: [
         // Path to your Tailwind base styles:
