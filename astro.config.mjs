@@ -14,22 +14,22 @@ export default defineConfig({
     starlight({
       title: 'التعليمات',
 
-  sidebar: [
-    {
-      label: 'إعدادات الخدمة',
-      items: [
+      sidebar: [
         {
-          slug: 'settings/windows',
-        },
-        {
-          slug: 'settings/macos',
-        },
-        {
-          slug: 'settings/linux',
+          label: 'إعدادات الخدمة',
+          items: [
+            {
+              slug: 'settings/windows',
+            },
+            {
+              slug: 'settings/macos',
+            },
+            {
+              slug: 'settings/linux',
+            },
+          ],
         },
       ],
-    },
-  ],
       logo: {
         light: './public/sais-dns-logo.svg',
         dark: './public/sais-dns-logo-light.svg',
@@ -46,7 +46,8 @@ export default defineConfig({
           label: 'العربية',
           dir: 'rtl',
           lang: 'ar'
-        }}
+        }
+      }
 
     }),
   ],
