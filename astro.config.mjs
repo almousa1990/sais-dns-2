@@ -27,6 +27,9 @@ export default defineConfig({
             {
               slug: 'settings/linux',
             },
+            {
+              slug: 'settings/ios',
+            },
           ],
         },
       ],
