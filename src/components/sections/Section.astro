@@ -5,7 +5,7 @@ interface Props {
 }
 
 const { id, class: customClass = "" } = Astro.props;
-const baseClass = "px-5 flex justify-center overflow-hidden lg:block py-10";
+const baseClass = "px-12 flex justify-center overflow-hidden lg:block py-10";
 ---
 
 <section id={id} class={`${baseClass} ${customClass}`}>
