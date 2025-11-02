@@ -1,6 +1,24 @@
 ---
-title: MacOS
-description: Learn more about my project in this docs site built with Starlight.
+title: macOS
+description: خطوات إعداد خوادم DNS على نظام macOS
 ---
 
-TBD
+## إعداد الخدمة على نظام macOS
+
+> اتبع الخطوات التالية لإعداد الخدمة:
+
+1. افتح **إعدادات النظام**.
+2. اضغط على **Wi-Fi** واتصل بشبكتك، ثم اضغط على **التفاصيل**.
+
+   ![إعدادات الواي فاي في macOS](/guides/macOS_step1.png){}
+
+3. انتقل إلى علامة **تبويب DNS**.
+
+   ![اختيار الـDNS](/guides/macOS_step2.png){}
+
+4. أدخل **عناوين الـIP** الخاصة **بخوادم الـDNS** التي اخترتها.
+
+   ![إدخال إعدادات الـDNS](/guides/macOS_step3.png){}
+   ![تأكيد إعدادات الـDNS](/guides/macOS_step4.png){}
+
+5. اضغط على **موافق** لحفظ الإعدادات.

@@ -5,12 +5,14 @@ import starlight from '@astrojs/starlight';
 import vercel from '@astrojs/vercel';
 
 import tailwindcss from '@tailwindcss/vite';
+import remarkAttributes from 'remark-attributes';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://sais-dns-2.vercel.app",
 
   integrations: [
+    
     starlight({
       title: 'التعليمات',
 
@@ -29,6 +31,18 @@ export default defineConfig({
             },
             {
               slug: 'settings/ios',
+            },
+            {
+              slug: 'settings/android',
+            },
+            {
+              label: 'إعدادات أجهزة التوجيه',
+              items: [
+                { slug: 'settings/routers/tp-link' },
+                { slug: 'settings/routers/huawei' },
+                { slug: 'settings/routers/zte' },
+                
+              ],
             },
           ],
         },

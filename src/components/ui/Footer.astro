@@ -5,14 +5,12 @@ import Linkedin from "../../assets/linkedin.svg";
 import Twitter from "../../assets/twitter.svg";
 import ShortForm from "../ui/ShortForm.astro";
 
-/*
+
 const links = [
-  { name: "About us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Use Cases", href: "#cases" },
-  { name: "Pricing", href: "#Testimonials" },
-  { name: "Blog", href: "#Home" },
-];*/
+  { name: "عن الخدمة", href: "#about" },
+  { name: "نقاط الوصول", href: "#services" },
+  { name: "اتصل بنا", href: "/feedback" },
+];
 --- 
 
 <section class=" bg-dark px-12">
@@ -29,9 +27,9 @@ const links = [
               <img src="/sais-dns-logo-light.svg" class="h-12" alt="وقاية" />
             </a>
           </picture>
-          {/*<ul class="flex flex-col sm:flex-row gap-5">
+          <ul class="flex flex-col sm:flex-row gap-5">
             
-              links.map((link) => {
+              {links.map((link) => {
                 return (
                   <li class="text-center">
                     <a class="underline" href={link.href}>
@@ -39,9 +37,9 @@ const links = [
                     </a>
                   </li>
                 );
-              })
+              })}
            
-          </ul> */}
+          </ul> 
         </div>
 
       </div>

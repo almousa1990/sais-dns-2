@@ -1,49 +1,32 @@
 ---
 title: iOS
-description: Learn more about my project in this docs site built with Starlight.
+description: خطوات إعداد خوادم DNS على أجهزة iPhone و iPad التي تعمل بنظام iOS 11 وما بعده
 ---
 
-## إعداد الخدمة على نظام ios 11 وما بعده
+## إعداد الخدمة على نظام iOS 11 وما بعده
 
-<p style="font-family:'Tahoma'; font-size:16px; color:#0078D7; margin-right:30px;">
-   اتبع الخطوات التالية لإعداد الخدمة: 
-  </p>
+> اتبع الخطوات التالية لإعداد الخدمة:
 
-1. افتح قائمة **ابدأ** ثم اختر **الإعدادات** .
+1. افتح قائمة **الإعدادات**.
 2. اضغط على **Wi-Fi** واتصل بشبكتك.
-3. على يمين اسم الشبكة، اضغط على رمز <span style="color:#0078D7;">ⓘ</span>، أو زر المعلومات.  
-   
- <p style="text-align: right; margin-right: 30px;">
-  <img src="/guides/ios_step1.jpeg" alt="إعدادات الواي فاي في iPhone" width="300">
-</p>
+3. على يمين اسم الشبكة، اضغط على رمز **ⓘ** أو زر **المعلومات**.
 
+   ![إعدادات الواي فاي في iPhone](/guides/ios_step1.jpeg){}
 
+4. تحت قسم **DNS**، اضغط على **تكوين DNS**.
 
-4. تحت قسم **DNS**، اضغط على **تكوين  DNS**.
-   
- <p style="text-align: right; margin-right: 30px;">
-<img src="/guides/ios_step2.jpeg" alt="اختيار الDNS" width="300">
-</p>
+   ![اختيار إعداد DNS](/guides/ios_step2.jpeg){}
 
 5. اختر **يدويًا**.
-   
- <p style="text-align: right; margin-right: 30px;">
-<img src="/guides/ios_step3.jpeg" alt="إعدادات الواي فاي في iPhone" width="300">
-</p>
+
+   ![اختيار الإعداد اليدوي](/guides/ios_step3.jpeg){}
 
 6. في قسم **خوادم DNS**، اضغط على **إضافة خادم**.
-   
-  <p style="text-align: right; margin-right: 30px;">
-<img src="/guides/ios_step4.jpeg" alt="إعدادات الواي فاي في iPhone" width="300">
-</p>
 
-  
+   ![إضافة خادم DNS](/guides/ios_step4.jpeg){}
 
-7. أدخل عناوين IP الخاصة **بخوادم** **DNS** التي قمت باختيارها. 
-   
- <p style="text-align: right; margin-right: 30px;">
-<img src="/guides/ios_step5.jpeg" alt="إعدادات الواي فاي في iPhone" width="300">
-</p>
+7. أدخل عناوين IP الخاصة **بخوادم DNS** التي قمت باختيارها.
 
-8. اضغط على **حفظ**.
+   ![إدخال عناوين DNS](/guides/ios_step5.png){}
 
+8. اضغط على **حفظ** لحفظ الإعدادات.

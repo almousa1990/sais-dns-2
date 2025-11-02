@@ -1,0 +1,21 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import Section from "./Section.astro";
+
+const formUrl = "https://sais.org.sa/2126-2/";
+const title = "تواصل معنا";
+const description = 'يسعدنا سماع ملاحظاتك واقتراحاتك لتحسين الخدمة'
+---
+
+<Section id="docs">
+  <SectionTitle sectionTitle={title} description={description} />
+  <div class="max-w-lg mx-auto">
+    <iframe
+      src={formUrl}
+      class="w-full h-[800px] border-0 overflow-hidden "
+      scrolling="no"
+      loading="lazy"
+      allow="clipboard-write; encrypted-media; fullscreen"
+    ></iframe>
+  </div>
+</Section>
