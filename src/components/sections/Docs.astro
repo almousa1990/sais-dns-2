@@ -38,7 +38,7 @@ const categories = [
     <div class="grid gap-4 pb-20">
       {
         categories.map(({ title, links }) => (
-          <div class="flex gap-4 border p-4 rounded-md shadow-sm bg-white hover:bg-zinc-50">
+          <div class="lg:flex grid gap-2 border p-4 rounded-md shadow-sm bg-white hover:bg-zinc-50">
             <div class="text-xl font-bold w-48">{title}</div>
             <div class="grid gap-2">
               {links.map(({ name, href }) => (
