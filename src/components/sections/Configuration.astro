@@ -6,7 +6,7 @@ import Section from "./Section.astro";
 import CopyButton from "../ui/Copy.astro";
 
 const description =
-  "اختر الطريقة المناسبة لبدء استخدام خدمة «وقاية» لتصفّحٍ آمنٍ ومناسبٍ لجميع أفراد الأسرة.";
+  "اختر الطريقة المناسبة لبدء استخدام خدمة «وقاية» لتصفّحٍ آمن ومناسبٍ لجميع أفراد الأسرة.";
 ---
 
 <Section id="services">
@@ -16,16 +16,16 @@ const description =
     <div class="grid gap-10">
       <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-4" dir="ltr">
         <ConfigurationCard title="IPv4">
-          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+          <CopyButton text="34.1.48.46" /><CopyButton text="34.1.48.143" />
         </ConfigurationCard>
         <ConfigurationCard title="IPv6">
-          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+          <CopyButton text="2600:1900:5400:545:8000:1::" /><CopyButton text="2600:1900:5400:545:8000:2::" />
         </ConfigurationCard>
         <ConfigurationCard title="DoH">
-          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+          <CopyButton text="34.1.48.46:443" /><CopyButton text="dns.sais.org.sa" />
         </ConfigurationCard>
         <ConfigurationCard title="DoT">
-          <CopyButton text="x.x.x.x" /><CopyButton text="x.x.x.x" />
+          <CopyButton text="34.1.48.46:853" /><CopyButton text="dns.sais.org.sa" />
         </ConfigurationCard>
       </div>
       <div class="text-center pt-10">
