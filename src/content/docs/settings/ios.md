@@ -11,22 +11,22 @@ description: خطوات إعداد خوادم DNS على أجهزة iPhone و iP
 2. اضغط على **Wi-Fi** واتصل بشبكتك.
 3. على يمين اسم الشبكة، اضغط على رمز **ⓘ** أو زر **المعلومات**.
 
-   ![إعدادات الواي فاي في iPhone](/guides/ios_step1.jpeg){}
+   ![إعدادات الواي فاي في iPhone](/guides/ios_step1.jpeg)
 
 4. تحت قسم **DNS**، اضغط على **تكوين DNS**.
 
-   ![اختيار إعداد DNS](/guides/ios_step2.jpeg){}
+   ![اختيار إعداد DNS](/guides/ios_step2.jpeg)
 
 5. اختر **يدويًا**.
 
-   ![اختيار الإعداد اليدوي](/guides/ios_step3.jpeg){}
+   ![اختيار الإعداد اليدوي](/guides/ios_step3.jpeg)
 
 6. في قسم **خوادم DNS**، اضغط على **إضافة خادم**.
 
-   ![إضافة خادم DNS](/guides/ios_step4.jpeg){}
+   ![إضافة خادم DNS](/guides/ios_step4.jpeg)
 
 7. أدخل عناوين IP الخاصة **بخوادم DNS** التي قمت باختيارها.
 
-   ![إدخال عناوين DNS](/guides/ios_step5.png){}
+   ![إدخال عناوين DNS](/guides/ios_step5.png)
 
 8. اضغط على **حفظ** لحفظ الإعدادات.

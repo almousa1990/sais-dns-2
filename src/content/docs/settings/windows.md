@@ -9,30 +9,30 @@ description: خطوات إعداد خوادم DNS على نظام Windows 11
 
 1. افتح قائمة **ابدأ** ثم اختر **الإعدادات**.
 
-   ![فتح الإعدادات](/guides/windows_step1.png){}
+   ![فتح الإعدادات](/guides/windows_step1.png)
 
 2. اختر **الشبكة والإنترنت** من القائمة الموجودة على الجانب الأيمن.
 
-   ![اختيار الشبكة والإنترنت](/guides/windows_step2.png){}
+   ![اختيار الشبكة والإنترنت](/guides/windows_step2.png)
 
 3. اذهب إلى **الخصائص**.
 
-   ![الذهاب إلى الخصائص](/guides/windows_step3.png){}
+   ![الذهاب إلى الخصائص](/guides/windows_step3.png)
 
 4. في قسم **تعيين خادم نظام أسماء المجالات**، اضغط على **تحرير**.
 
-   ![اختيار تعيين خادم DNS](/guides/windows_step4.png){}
+   ![اختيار تعيين خادم DNS](/guides/windows_step4.png)
 
 5. في النافذة التي تظهر، اختر **يدوي**.
 
-   ![اختيار يدوي](/guides/windows_step5.png){}
+   ![اختيار يدوي](/guides/windows_step5.png)
 
 6. قم بتفعيل إصدار البروتوكول الذي تستخدمه.
 
-   ![تفعيل بروتوكول IPv4](/guides/windows_step6.png){}
+   ![تفعيل بروتوكول IPv4](/guides/windows_step6.png)
 
 7. أدخل عناوين IP الخاصة **بخوادم DNS** التي اخترتها في حقلي **خادم DNS المفضل** و**خادم DNS البديل**.
 
-   ![إدخال عناوين IP لخوادم DNS](/guides/windows_step7.png){}
+   ![إدخال عناوين IP لخوادم DNS](/guides/windows_step7.png)
 
 8. اضغط على **حفظ** لحفظ الإعدادات.
